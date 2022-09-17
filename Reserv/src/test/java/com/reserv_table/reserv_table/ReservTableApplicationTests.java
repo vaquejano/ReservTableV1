@@ -1,0 +1,13 @@
+package com.reserv_table.reserv_table;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class ReservTableApplicationTests {
+
+	@Test
+	void contextLoads() {
+	}
+
+}
