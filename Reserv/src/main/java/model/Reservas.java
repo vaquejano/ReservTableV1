@@ -6,44 +6,47 @@ package model;
 //@Entity
 //@Table(name="reservas")
 public class Reservas {
-   
-   private int CodUsuario;
-   
-   private int CodEmpresa;
-   
-   private String nome_Usuario;
-   
+       //@Column(name="codusuario")
+   private int codusuario;
+       //@Column(name="codempresa")
+   private int codempresa;
+       //@Column(name="nome_usuario")
+   private String nome_usuario;
+       //@Column(name="email_usuario")
    private String email_usuario;
-
-   public Reservas(int CodUsuario, int CodEmpresa, String nome_Usuario, String email_usuario) {
-        this.CodUsuario = CodUsuario;
-        this.CodEmpresa = CodEmpresa;
-        this.nome_Usuario = nome_Usuario;
+       //@Column(name="situacao")
+   private boolean situacao;
+           
+   public Reservas(int codusuario, int codempresa, String nome_usuario, String email_usuario, boolean situacao ) {
+        this.codusuario = codusuario;
+        this.codempresa = codempresa;
+        this.nome_usuario = nome_usuario;
         this.email_usuario = email_usuario;
+        this.situacao = situacao;
+   }
+
+    public int getcodusuario() {
+        return codusuario;
     }
 
-    public int getCodUsuario() {
-        return CodUsuario;
-    }
-
-    public void setCodUsuario(int CodUsuario) {
-        this.CodUsuario = CodUsuario;
+    public void setcodusuario(int codusuario) {
+        this.codusuario = codusuario;
     }
     
-    public int getCodEmpresa() {
-        return CodEmpresa;
+    public int getcodempresa() {
+        return codempresa;
     }
 
-    public void setCodEmpresa(int CodEmpresa) {
-        this.CodEmpresa = CodEmpresa;
+    public void setcodempresa(int codempresa) {
+        this.codempresa = codempresa;
     }
     
-    public String getNome_Usuario() {
-        return nome_Usuario;
+    public String getnome_usuario() {
+        return nome_usuario;
     }
 
-    public void setNome_Usuario(String nome_Usuario) {
-        this.nome_Usuario = nome_Usuario;
+    public void setnome_usuario(String nome_usuario) {
+        this.nome_usuario = nome_usuario;
     }
 
         public String getEmail_usuario() {
@@ -53,5 +56,12 @@ public class Reservas {
     public void setEmail_usuario(String email_usuario) {
         this.email_usuario = email_usuario;
     }
+    
+         public String getsituacao() {
+        return situacao;
+    }
 
+    public void setsituacao(String situacao) {
+        this.situacao = situacao;
+    }
 }

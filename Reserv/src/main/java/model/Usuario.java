@@ -7,47 +7,47 @@ package model;
 //@Table(name="usuario")
 public class Usuario {
     //@Id
-    //@Column(name="CodUsuario")
-   private int Cod_Usuario;
-    //@Column(name="nome_Usuario")
-   private String nome_Usuario;
-    //@Column(name="cpf_Uduario")
-   private String cpf_Usuario;
+    //@Column(name="cod_usuario")
+   private int cod_usuario;
+    //@Column(name="nome_usuario")
+   private String nome_usuario;
+    //@Column(name="cpf_usuario")
+   private String cpf_usuario;
     //@Column(name="senha_usuario")
    private String senha_usuario;
-    //@Column(name="Email_usuario")
+    //@Column(name="email_usuario")
    private String email_usuario;
 
-    public Usuario(int Cod_Usuario, String nome_Usuario, String cpf_Usuario, String senha_usuario, String email_usuario) {
-        this.Cod_Usuario = Cod_Usuario;
-        this.nome_Usuario = nome_Usuario;
-        this.cpf_Usuario = cpf_Usuario;
+    public Usuario(int cod_usuario, String nome_usuario, String cpf_usuario, String senha_usuario, String email_usuario) {
+        this.cod_usuario = cod_usuario;
+        this.nome_usuario = nome_usuario;
+        this.cpf_usuario = cpf_usuario;
         this.senha_usuario = senha_usuario;
         this.email_usuario = email_usuario;
     }
 
-    public int getCod_Usuario() {
-        return Cod_Usuario;
+    public int getcod_usuario() {
+        return cod_usuario;
     }
 
-    public void setCod_Usuario(int Cod_Usuario) {
-        this.Cod_Usuario = Cod_Usuario;
+    public void setcod_usuario(int cod_usuario) {
+        this.cod_usuario = cod_usuario;
     }
 
-    public String getNome_Usuario() {
-        return nome_Usuario;
+    public String getnome_usuario() {
+        return nome_usuario;
     }
 
-    public void setNome_Usuario(String nome_Usuario) {
-        this.nome_Usuario = nome_Usuario;
+    public void setnome_usuario(String nome_usuario) {
+        this.nome_usuario = nome_usuario;
     }
 
-    public String getCpf_Usuario() {
-        return cpf_Usuario;
+    public String getcpf_usuario() {
+        return cpf_usuario;
     }
 
-    public void setCpf_Usuario(String cpf_Usuario) {
-        this.cpf_Usuario = cpf_Usuario;
+    public void setcpf_usuario(String cpf_usuario) {
+        this.cpf_usuario = cpf_usuario;
     }
 
     public String getSenha_usuario() {
