@@ -4,26 +4,46 @@ package model;
 //import javax.persistence.Id;
 //import javax.persistence.Table;
 //@Entity
-//@Table(name="usuario")
-public class Usuario {
+//@Table(name="mesa")
+public class Mesa {
     //@Id
-    //@Column(name="CodUsuario")
-   private int Cod_Usuario;
-    //@Column(name="nome_Usuario")
-   private String nome_Usuario;
-    //@Column(name="cpf_Uduario")
-   private String cpf_Usuario;
-    //@Column(name="senha_usuario")
-   private String senha_usuario;
-    //@Column(name="Email_usuario")
-   private String email_usuario;
+    //@Column(name="codmesa")
+   private int codmesa;
+    //@Column(name="codempresa")
+   private int codempresa;
+    //@Column(name="quantidadelugar")
+   private int quantidadelugar;
+ 
 
-    public Usuario(int Cod_Usuario, String nome_Usuario, String cpf_Usuario, String senha_usuario, String email_usuario) {
-        this.Cod_Usuario = Cod_Usuario;
-        this.nome_Usuario = nome_Usuario;
-        this.cpf_Usuario = cpf_Usuario;
-        this.senha_usuario = senha_usuario;
-        this.email_usuario = email_usuario;
+    public Mesa(int codmesa, int codempresa, int quantidadelugar) {
+        this.codmesa = codmesa;
+        this.codempresa = codempresa;
+        this.quantidadelugar = quantidadelugar;
+        
+    }
+
+    public int getCodmesa() {
+        return codmesa;
+    }
+
+    public void setCodmesa(int codmesa) {
+        this.codmesa = codmesa;
+    }
+
+    public int getCodempresa() {
+        return codempresa;
+    }
+
+    public void setCodempresa(int codempresa) {
+        this.codempresa = codempresa;
+    }
+
+    public int getQuantidadelugar() {
+        return quantidadelugar;
+    }
+
+    public void setQuantidadelugar(int quantidadelugar) {
+        this.quantidadelugar = quantidadelugar;
     }
 
    

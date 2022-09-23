@@ -1,4 +1,10 @@
-
+package model;
+//import javax.persistence.Column;
+//import javax.persistence.Entity;
+//import javax.persistence.Id;
+//import javax.persistence.Table;
+//@Entity
+//@Table(name="nome_fantasia")
 public class Cadastro_Empresa {
          private int cod_empresa;
     //@Column(name="nome_fantasia")
