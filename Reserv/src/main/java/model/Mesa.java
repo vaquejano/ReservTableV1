@@ -45,5 +45,5 @@ public class Mesa {
     public void setQuantidadelugar(int quantidadelugar) {
         this.quantidadelugar = quantidadelugar;
     }
-
+}
    

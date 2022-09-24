@@ -20,7 +20,7 @@ public class Cadastro_Empresa {
 
    
    
-    public Cadastro_Empresa(int cod_empresa, String nome_fantasia, String cnpj_Usuario, String endereco_empresa, String senha_empresa, String ramo_empresa, String porte_empresa) {
+    public Cadastro_Empresa(int cod_empresa, String nome_fantasia, String cnpj_empresa, String endereco_empresa, String senha_empresa, String ramo_empresa, String porte_empresa) {
         this.cod_empresa = cod_empresa;
         this.nome_fantasia = nome_fantasia;
         this.cnpj_empresa= cnpj_empresa;
