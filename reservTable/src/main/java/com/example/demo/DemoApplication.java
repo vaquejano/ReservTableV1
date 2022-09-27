@@ -1,13 +1,13 @@
-package com.reserv_table.reserv_table;
+package com.example.demo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ReservTableApplication {
+public class DemoApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ReservTableApplication.class, args);
+		SpringApplication.run(DemoApplication.class, args);
 	}
 
 }
