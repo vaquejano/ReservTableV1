@@ -9,7 +9,7 @@ import java.util.Optional;
 public interface EmpresaService {
     public List<Empresa> listaEmpresas();
     
-    public Optional<Empresa> getByIdCliente(Integer codEmpresa);
+    public Optional<Empresa> getByIdEmpresa(Integer codEmpresa);
 
     public Empresa salvaEmpresa(Empresa empresa);
 

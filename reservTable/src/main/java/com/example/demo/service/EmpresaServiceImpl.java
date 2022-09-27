@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class EmpresaServiceImpl implements EmpresaService{
+
     @Autowired
     private EmpresaRepository empresaRepository;
 
@@ -19,7 +20,7 @@ public class EmpresaServiceImpl implements EmpresaService{
     }
 
     @Override
-    public Optional<Empresa> getByIdCliente(Integer codEmpresa){
+    public Optional<Empresa> getByIdEmpresa(Integer codEmpresa){
         return empresaRepository.findById(codEmpresa);
     }
 

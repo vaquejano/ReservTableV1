@@ -30,8 +30,8 @@ public class EmpresaController {
 
 }  
     @GetMapping("empresa/{codempresa}")
-    public ResponseEntity<Optional<Empresa>> getByIdCliente(@PathVariable Integer codempresa){
-        return ResponseEntity.status(HttpStatus.OK).body(empresaService.getByIdCliente(codempresa));
+    public ResponseEntity<Optional<Empresa>> getByIdEmpresa(@PathVariable Integer codempresa){
+        return ResponseEntity.status(HttpStatus.OK).body(empresaService.getByIdEmpresa(codempresa));
 }
 
     @PostMapping("empresa")
