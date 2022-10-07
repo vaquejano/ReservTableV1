@@ -19,7 +19,7 @@ public class Usuario {
    private String senhaUsuario;
     @Column(name="email_usuario")
    private String emailUsuario;
-
+    
     public Usuario() {
     }
 
