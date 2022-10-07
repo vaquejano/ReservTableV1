@@ -1,6 +1,4 @@
-
 package com.example.demo.model;
-
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -10,13 +8,13 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table (name= "mesa")
+@Table(name = "mesa")
 public class Mesa {
+
     @Id
     @Column(name = "cod_mesa")
     private Integer codMesa;
-    
-    
+
     @ManyToOne
     @JoinColumn(name = "cod_empresa", referencedColumnName = "cod_empresa")
     private Empresa empresa;
@@ -27,13 +25,12 @@ public class Mesa {
     public Mesa() {
     }
 
-    public Mesa(int codMesa, Empresa empresa, double quantidadeLugar){
+    public Mesa(int codMesa, Empresa empresa, double quantidadeLugar) {
         this.codMesa = codMesa;
         this.empresa = empresa;
         this.quantidadeLugar = quantidadeLugar;
 
-   
-}
+    }
 
     public Integer getCodMesa() {
         return codMesa;
@@ -51,6 +48,4 @@ public class Mesa {
         this.quantidadeLugar = quantidadeLugar;
     }
 
-
 }
-
