@@ -2,6 +2,8 @@ package com.example.demo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -12,7 +14,7 @@ import javax.persistence.Table;
 
 public class Reserva {
     @Id
-    //@GeneretedValuue(strategy = GenerationType.IDENTITY) Gera id automatico
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "cod_reserva")
     private Integer codReserva;
     
