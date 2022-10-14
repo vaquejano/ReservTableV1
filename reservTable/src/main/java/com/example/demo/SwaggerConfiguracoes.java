@@ -35,11 +35,11 @@ public class SwaggerConfiguracoes {
     }
     private ApiInfo apiInfo(){
         return new ApiInfoBuilder()
-        .title("API - EMPRESAS")
-        .description("API de pedidos da disciplina de Engenharia de Software, cONTROLLLER")
+        .title("API - PARA RESERVA DE MESAS!")
+        .description("API Para Reserva de Mesas!")
         .version("1.0")
         .termsOfServiceUrl("https://https://github.com/vaquejano")
-        .license("Aluno. Carlos Bergamo")
+        .license("Alunos Carlos Bergamo, Bruno Mecca, Lohan, Heinrick, Caio")
         .build();
     }
 }
